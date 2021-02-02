@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FiszKing</string>
+    <string name="zaczynajmy">Zaczynajmy!</string>
+    <string name="more">Dowiedz się więcej</string>
+    <string name="more_info">Dzięki, że pobrałeś/aś FiszKing ;)
+        Aplikacja pomoże Ci w łatwy sposób uczyć się słówek. Już nie musisz tworzyć setek fiszek na papierze, które zaraz się zgubią. Od teraz będziesz mieć je wszystkie w jednym miejscu.</string>
+    <string name="about_me">Jestem studentką informatyki na Politechnice Wrocławskiej. Więcej moich projektów znajdziesz na github.com</string>
+    <string name="about_app">O aplikacji</string>
+    <string name="about_author">O autorce</string>
+    <string name="dodaj">Dodaj fiszkę</string>
+</resources>

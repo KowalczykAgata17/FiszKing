@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000d20">
+
+
+    <ImageButton
+        android:id="@+id/go_back_btn"
+        android:layout_width="78dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:adjustViewBounds="true"
+        android:background="#000d20"
+        android:onClick="goBack"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_arrow"
+        tools:ignore="OnClick" />
+
+
+    <ImageView
+        android:id="@+id/startImage"
+        android:layout_width="222dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="160dp"
+        android:background="#000d20"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/flashcardImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toEndOf="@+id/go_back_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/nazwa" />
+
+
+    <ImageView
+        android:id="@+id/flashcardImage"
+        android:layout_width="409dp"
+        android:layout_height="341dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="72dp"
+        android:background="#000d20"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/add_word"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/fiszka" />
+
+    <TextView
+        android:id="@+id/wordOn"
+        android:layout_width="282dp"
+        android:layout_height="83dp"
+        android:layout_alignTop="@id/flashcardImage"
+        android:fontFamily="serif-monospace"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#ffbd59"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="@+id/flashcardImage"
+        app:layout_constraintEnd_toEndOf="@+id/flashcardImage"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/flashcardImage"
+        app:layout_constraintVertical_bias="0.612" />
+
+    <TextView
+        android:id="@+id/meaningOn"
+        android:layout_width="252dp"
+        android:layout_height="58dp"
+        android:layout_alignTop="@id/flashcardImage"
+        android:layout_marginTop="241dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_vertical|right"
+        android:textColor="#fff"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/flashcardImage"
+        app:layout_constraintEnd_toEndOf="@+id/flashcardImage"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/flashcardImage"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/add_word"
+        android:layout_width="184dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginRight="112dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/default_border"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="Next"
+        android:text="Następna"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meaning"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
